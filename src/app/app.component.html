@@ -1,0 +1,11 @@
+ <div class="container"> People list</div>
+<div class="container" >  
+    <app-person *ngFor="let person of people" [person]="person" ></app-person>
+</div>
+<div class="container input-group mb-6">
+  <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name">
+  <input type="text" class="form-control" placeholder="Age" [(ngModel)]="age">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="addPerson()">Add</button>
+  </div>
+</div>
